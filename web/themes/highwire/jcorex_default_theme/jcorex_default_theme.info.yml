@@ -1,0 +1,8 @@
+name: jcorex_default_theme
+type: theme
+description: Custom Base theme
+base theme: jcorex_base
+core_version_requirement: ^8.8 || ^9
+
+libraries:
+  - jcorex_default_theme/global-styles
