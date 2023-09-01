@@ -20,6 +20,15 @@ altmetrics_style:
     theme:
       css/altmetrics-style.css: {}
 
+tooltip_popup:
+  css:
+    theme:
+      css/tooltip_popup.css: {}
 
-
-    
+jumptosection:
+  version: VERSION
+  js:
+    js/jumptosection.js: {}
+  css:
+    theme:
+      css/jumptosection.css: {}
