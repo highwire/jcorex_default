@@ -6,7 +6,7 @@ dependencies:
     - system
   theme:
     - jcorex_default_theme
-id: jcorex_base_mainpagecontent
+id: mainpagecontent
 theme: jcorex_default_theme
 region: content
 weight: 0
