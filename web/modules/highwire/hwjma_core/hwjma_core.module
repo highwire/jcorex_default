@@ -109,7 +109,7 @@ function hwjma_core_entity_extra_field_info() {
       'description' => t('Show / exit focus view.'),
       'visible' => FALSE,
     ];
-    $fields['node'][$node_type]['display']['hwjma_toc_pager'] = [
+    $fields['node'][$node_type]['display']['prevnext_toc_pager'] = [
      'label' => t('Toc pager'),
       'description' => t('Previous and next links based on toc structure.'),
       'visible' => FALSE,
@@ -161,13 +161,13 @@ function hwjma_core_node_view(array &$build, EntityInterface $entity, EntityView
     }
   }
   // Add toc pager.
-  if ($display->getComponent('hwjma_toc_pager')) {
+  if ($display->getComponent('prevnext_toc_pager')) {
     $block_manager = \Drupal::service('plugin.manager.block');
-    $plugin_block = $block_manager->createInstance('hwjma_toc_pager', []);
+    $plugin_block = $block_manager->createInstance('prevnext_toc_pager', []);
     $plugin_block->setContextValue('node', $entity);
     $render = $plugin_block->build();
     if (!empty($render)) {
-      $build['hwjma_toc_pager'] = $render;
+      $build['prevnext_toc_pager'] = $render;
     }
   }
   // Add prev/next pager.

@@ -27,7 +27,7 @@ function hwjma_content_display_theme() {
     'hwjma_icon' => [
       'render element' => 'element',
     ],
-    'hwjma_toc_pager' => [
+    'prevnext_toc_pager' => [
       'variables' => ['previous_url' => NULL, 'next_url' => NULL],
     ],
 	];

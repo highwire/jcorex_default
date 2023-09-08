@@ -15,9 +15,9 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  * Provides a block to display the pager for a chapter/section.
  *
  * @Block(
- *   id = "hwjma_toc_pager",
+ *   id = "prevnext_toc_pager",
  *   admin_label = @Translation("TOC Pager"),
- *   category = @Translation("hwjma"),
+ *   category = @Translation("Pager"),
  *   context = {
  *     "node" = @ContextDefinition(
  *       "entity:node",
@@ -173,7 +173,7 @@ class TOCPager extends BlockBase implements ContainerFactoryPluginInterface
 
     // Build render array with empty links as default values.
     $build += [
-      '#theme' => 'hwjma_toc_pager',
+      '#theme' => 'prevnext_toc_pager',
       '#previous_url' => '',//Url::fromRoute('<nolink>'),
       '#next_url' => '',//Url::fromRoute('<nolink>'),
     ];
